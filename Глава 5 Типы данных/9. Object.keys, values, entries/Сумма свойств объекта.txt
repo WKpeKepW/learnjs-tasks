@@ -1,0 +1,9 @@
+function sumSalaries(salaries){
+  let sum = 0;
+
+  for (let prop of Object.values(salaries)) {
+    sum += prop;
+  }
+
+  return sum;
+}

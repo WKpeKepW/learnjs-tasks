@@ -1,0 +1,11 @@
+let styles = ["Джаз","Блюз"];
+styles.push("Рок-н-ролл");
+let halfOfArr = Math.floor(styles.length / 2);
+let halfStylesArr = [];
+for(let i = 0; i < styles.length; i++){
+  halfOfArr == i ? halfStylesArr[i] = "Классика" : halfStylesArr[i] = styles[i];
+}
+styles = halfStylesArr;
+alert(styles.shift());
+styles.unshift(["Реп","Регги"])
+alert(styles);

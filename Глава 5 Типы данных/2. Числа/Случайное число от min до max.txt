@@ -1,0 +1,9 @@
+function random(min,max){
+  let rand;
+  do{
+    rand = Math.random();
+    rand *= 10;
+  }
+  while(!(rand > min && rand < max));
+  return rand;
+}

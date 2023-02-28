@@ -1,0 +1,2 @@
+1. outPlanet
+2. currentUser

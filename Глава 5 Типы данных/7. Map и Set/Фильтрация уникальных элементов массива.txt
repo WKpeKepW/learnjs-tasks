@@ -1,0 +1,11 @@
+function unique(arr) {
+  let uniqueArr = new Set();
+  let newArr = [];
+  for(let elem of arr){
+    uniqueArr.add(elem)
+  }
+  uniqueArr.forEach(elem =>{
+    newArr.push(elem);
+  });
+  return newArr;
+}

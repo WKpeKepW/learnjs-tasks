@@ -1,0 +1,38 @@
+Что выведет alert (ИЛИ)?:
+1. 2
+2. 1 2
+3. null
+4. 1 undefined
+
+Что выведет этот код?: 3
+
+Проверка значения из диапазона:
+let age = prompt("Сколько вам лет");
+if(14 <= age && age <= 90)
+    alert("Вы в диапазоне");
+
+Проверка значения вне диапазона:
+let age = prompt("Сколько вам лет");
+if(14 >= age || age >= 90)
+    alert("Вы в диапазоне");
+
+let age = prompt("Сколько вам лет");
+if(!(14 <= age) || !(age <= 90))
+    alert("Вы в диапазоне");
+
+Вопрос об "if":
+if (-1 || 0) true вывод first
+if (-1 && 0) false
+if (null || -1 && 1) true вывод third
+
+Проверка логина:
+let User = prompt("Логин");
+if(User == undefined || User == '')
+    alert("Отменено");
+else if (User != "Админ")
+    alert("Я вас не знаю");
+else
+{
+    let pass = prompt("Пароль");
+    pass == "Я главный" ? alert("Здравствуйте!") : (pass == undefined || pass == '') ? alert("Отменено") : alert("Неверный пароль");   
+}

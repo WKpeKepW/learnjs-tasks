@@ -1,0 +1,6 @@
+function checkSpam(str){
+  let strcheck = str.toLowerCase();
+  if(strcheck.includes("viagra") || strcheck.includes("xxx"))
+    return true;
+  return false;
+}

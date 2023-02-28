@@ -1,0 +1,11 @@
+function checkNum(){
+    while(true){
+        let num = prompt("Введите число");
+
+        if(num == undefined || num == "")
+            return null;
+        else if(!isNaN(num))
+            return num;
+    }
+    
+}

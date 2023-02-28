@@ -1,0 +1,23 @@
+function formatDate(date) {
+  let now = new Date();
+  let diff = now.getTime() - date.getTime();
+
+  if (diff < 1000) {
+    return ('right now');
+  }
+  else if (diff < 60 * 1000) {
+    return (`${Math.round(diff / 1000)} secs ago`);
+  }
+  else if (diff < 60 * 60 * 1000) {
+    return (`${Math.round(diff / 60000)} mins ago`);
+  }
+  else {
+    let day = date.getDate() > 10 ? date.getDate() : "0" + date.getDate();
+    let month = date.getMonth() > 10 ? date.getMonth() : "0" + date.getMonth();
+    let year = date.getFullYear() > 2010 ? date.getFullYear() - 2000 : "0" + (date.getFullYear() - 2000);
+    let hours = date.getHours() > 10 ? date.getHours() : "0" + date.getHours();
+    let mins = date.getMinutes() > 10 ? date.getMinutes() : "0" + date.getMinutes();
+
+    return `${day}.${month}.${year} ${hours}:${mins}`;
+  };
+}

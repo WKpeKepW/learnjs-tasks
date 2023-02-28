@@ -1,0 +1,31 @@
+Обязателен ли "else"?: Нет, так как в случае false в if мы всё равно перейдём к другому return
+
+Перепишите функцию, используя оператор '?' или '||':
+function checkAge(age)
+{
+	return age > 18 ? true : confirm('Родители разрешили?');
+}
+
+function checkAge(age)
+{
+	return (age > 18) || confirm('Родители разрешили?');
+}
+
+Функция min(a, b):
+function min(a,b)
+{
+	return a>b ? b : a;
+}
+
+Функция pow(x,n):
+
+let a = +prompt("Число a");
+let b = +prompt("Число b");
+if(a >= 1 && b >= 1 && a % 1 == 0 && b % 1 == 0)
+    alert(pow(a,b));
+else
+alert("Ваше число не натуральное")
+function pow(a,b)
+{
+    return a**b;
+}

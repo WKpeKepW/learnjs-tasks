@@ -1,0 +1,21 @@
+function sumInput(){
+  let Array = [];
+
+  while(true){
+    let input = +prompt("Введите значение");
+
+    if(isNaN(input) || input == ""){
+      let sumArr = 0;
+
+      for(let item of Array){
+        sumArr += item;
+      } 
+
+      return sumArr;
+    }
+
+    else
+      Array.push(input);
+  } 
+}
+alert(sumInput());

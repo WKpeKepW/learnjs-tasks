@@ -1,0 +1,8 @@
+function filterRange(arr, a, b){
+  let newArr = [];
+  arr.forEach(element = {
+    if(element = a && element = b)
+      newArr += element;
+  });
+  return newArr;
+}

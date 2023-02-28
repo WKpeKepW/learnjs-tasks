@@ -1,0 +1,10 @@
+function aclean(arr) {
+  let mapArr = new Map();
+
+  for (let prop of arr) {
+    let sorted = prop.toLowerCase().split("").sort().join(""); // (*)
+    mapArr.set(sorted, prop);
+  }
+
+  return Array.from(mapArr.values());
+}

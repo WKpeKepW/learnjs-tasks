@@ -1,0 +1,19 @@
+if (строка с нулём): да, так как строка не пустая
+
+Название JavaScript:
+let answer = prompt("Какое «официальное» название JavaScript?");
+if(answer == "ECMAScript")
+    alert("Верно!");
+else
+    alert("Не знаете? ECMAScript!");
+
+Покажите знак числа:
+let answer = prompt("Введите число");
+if(answer > 1)
+    alert(1);
+else if (answer < -1)
+    alert(-1);
+else alert(0);
+
+Перепишите 'if' в '?':
+let result = (a + b < 4) ? result = 'Мало' : result = 'Много';

@@ -1,0 +1,20 @@
+function Calculator(){
+return {
+    read(){
+        this.a = +prompt("a");
+        this.b = +prompt("a");
+    },
+    sum(){
+        return this.a + this.b;
+    },
+    mul(){
+        return this.a + this.b;
+    }
+}
+}
+
+let calculator = new Calculator();
+calculator.read();
+
+alert( "Sum=" + calculator.sum() );
+alert( "Mul=" + calculator.mul() );
